@@ -1,0 +1,82 @@
+.container-main{
+  width: 100%;
+  margin-left: 20%;
+  padding: 1.5rem 2rem;
+}
+
+.heading {
+  letter-spacing: 0.2rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
+  border-bottom: solid 1px black;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.quote {
+  border-radius: 1rem;
+  background-color: rgba(200,200,200,0.2);
+  font-size: 1.12rem;
+  min-height: 6rem;
+  padding: 1rem;
+  text-align: center;
+  width: 80%;
+}
+
+.quote-link {
+  color: rgb(10,10,255);
+  font-size: 1rem;
+  text-align: right;
+  width: 20%;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.heading-two {
+  text-align: center;
+  border-top: double 6px black;
+  border-bottom: double 6px black;
+  height: 4rem;
+}
+
+.code-block {
+  width: 80%;
+}
+
+.table {
+  width: 80%;
+}
+
+.table-row {
+  background-color: rgba(200,200,200,0.2);
+}
+
+.table-row td {
+  padding: 0.8rem; 
+  border: solid 2px black;
+}
+
+.table-row td h4 {
+  color: rgb(209, 121, 14)
+}
+
+.see-more {
+  color: rgb(10,10,255);
+  width: 80%;
+  text-align: right;
+}
+

@@ -1,0 +1,41 @@
+.container-nav {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.1);
+  border-right: solid 4px grey;
+  width: 20%;
+  padding: 0.5rem;
+  min-height: 100vh;
+}
+
+.nav-item {
+  border-bottom: double 4px grey;
+  padding: 0.8rem;
+}
+
+.link-list {
+  display: flex;
+  padding-left: 0.4rem;
+  padding-top: 0.4rem;
+}
+
+.link-list img {
+  margin-right: 0.4rem;
+}
+
+.link-sub-list {
+  margin-left: 1.5rem;
+}
+
+.ml-24 {
+  margin-left: 3.8rem;
+}
+
+.pt-8 {
+  padding-top: 0.4rem;
+}
+
+.gold-color {
+  color: rgb(209, 121, 14);
+}
