@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 function HtmlNav(props) {
   return (
@@ -7,10 +6,6 @@ function HtmlNav(props) {
       <h4>HTML</h4>
     </div>
   )
-}
-
-HtmlNav.propTypes = {
-
 }
 
 export default HtmlNav
