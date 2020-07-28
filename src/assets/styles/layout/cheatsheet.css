@@ -12,6 +12,18 @@
   width: 80%;
 }
 
+.heading-two {
+  border-bottom: double 6px black;
+  height: 4rem;
+  width: 80%;
+}
+
+.heading-three {
+  border-bottom: solid 4px black;
+  padding-bottom: 1rem;
+  width: 80%;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -42,18 +54,24 @@
   margin-bottom: 2rem;
 }
 
+.my-4{
+  margin: 1rem 0;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .text-center {
   text-align: center;
 }
 
-.heading-two {
-  border-bottom: double 6px black;
-  height: 4rem;
-  width: 80%;
+.container-topic {
+  margin: 1.5rem 0;
 }
 
 .code-block {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Prism as CodeBlock } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/prism";
 import {
   stringLiteral,
   capitalizeString,
@@ -14,8 +14,8 @@ import {
 } from "../../constants/pythonCode";
 
 const Strings = () =>  (
-    <>
-      <h3 id="strings" className="mb-4">
+    <div className="container-topic">
+      <h3 id="strings" className="heading-three mb-4">
         Strings
       </h3>
       <div className="quote flex-center mb-8">
@@ -39,12 +39,11 @@ const Strings = () =>  (
           language="python"
           showLineNumbers={true}
           wrapLines={true}
-          style={dark}
+          style={pojoaque}
         >
           {stringLiteral}
         </CodeBlock>
       </div>
-      <div></div>
       <h3 className="mb-4">Common string methods</h3>
       <table cellSpacing={10} className="table">
         <tbody>
@@ -66,7 +65,7 @@ const Strings = () =>  (
                 language="python"
                 showLineNumbers={true}
                 wrapLines={true}
-                style={dark}
+                style={pojoaque}
               >
                 {capitalizeString}
               </CodeBlock>
@@ -93,7 +92,7 @@ const Strings = () =>  (
                 language="python"
                 showLineNumbers={true}
                 wrapLines={true}
-                style={dark}
+                style={pojoaque}
                 children={findString}
                 />
             </td>
@@ -116,7 +115,7 @@ const Strings = () =>  (
                 language="python"
                 showLineNumbers={true}
                 wrapLines={true}
-                style={dark}
+                style={pojoaque}
                 children={formatString}
                 />
             </td>
@@ -139,7 +138,7 @@ const Strings = () =>  (
                 language="python"
                 showLineNumbers={true}
                 wrapLines={true}
-                style={dark}
+                style={pojoaque}
                 children={lowerString}
                 />
             </td>
@@ -165,7 +164,7 @@ const Strings = () =>  (
                 language="python"
                 showLineNumbers={true}
                 wrapLines={true}
-                style={dark}
+                style={pojoaque}
                 children={replaceString}
                 />
             </td>
@@ -190,7 +189,7 @@ const Strings = () =>  (
                 language="python"
                 showLineNumbers={true}
                 wrapLines={true}
-                style={dark}
+                style={pojoaque}
                 children={splitString}
                 />
             </td>
@@ -213,7 +212,7 @@ const Strings = () =>  (
                 language="python"
                 showLineNumbers={true}
                 wrapLines={true}
-                style={dark}
+                style={pojoaque}
                 children={titleString}
                 />
             </td>
@@ -236,7 +235,7 @@ const Strings = () =>  (
                 language="python"
                 showLineNumbers={true}
                 wrapLines={true}
-                style={dark}
+                style={pojoaque}
                 children={upperString}
               />
             </td>
@@ -252,7 +251,7 @@ const Strings = () =>  (
           See more string methods...
         </a>
       </div>
-    </>
+    </div>
   )
 
 export default Strings

@@ -1,18 +1,6 @@
 import React from "react";
-import { Prism as CodeBlock } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
-import {
-  stringLiteral,
-  capitalizeString,
-  findString,
-  formatString,
-  lowerString,
-  replaceString,
-  splitString,
-  titleString,
-  upperString,
-} from "../constants/pythonCode";
 import Strings from "./python/strings";
+import Numbers from "./python/numbers";
 
 const PythonSheet = () => {
   return (
@@ -37,11 +25,11 @@ const PythonSheet = () => {
           Wikipedia
         </a>
       </div>
-
       <div id="data-types" className="heading-two flex-center mb-8">
         <h2>Data-Types</h2>
       </div>
       <Strings />
+      <Numbers />
     </div>
   );
 };
