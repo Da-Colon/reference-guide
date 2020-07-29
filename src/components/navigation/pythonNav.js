@@ -7,6 +7,7 @@ const PythonNav = (props) => {
   const [dataTypeExpanded, setDataTypeExpanded] = useState(false);
   const [stringsExpanded, setStringsExpanded] = useState(false);
   const [numbersExpanded, setNumbersExpanded] = useState(false);
+  const [listsExpanded, setListsExpanded] = useState(false);
 
   return (
     <div className="nav-item">
@@ -148,7 +149,47 @@ const PythonNav = (props) => {
                 scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
                 <li className="pt-8 gold-color">randint()</li>
               </HashLink>
-
+            </div>
+          )}
+          <div className="link-list link-sub-list">
+            <img
+              alt=""
+              onClick={() => setListsExpanded(!listsExpanded)}
+              src={!listsExpanded ? fileArrowRight : fileArrowDown}
+            />
+            <HashLink
+              smooth
+              to="/python#lists"
+              scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+              <li>Lists</li>
+            </HashLink>
+          </div>
+          {listsExpanded && (
+            <div className="link-sub-list ml-24">
+              <HashLink
+                smooth
+                to="/python#accessing"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">Accessing a List</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#append"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 gold-color">append()</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#pop"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 gold-color">pop()</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#insert"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 gold-color">insert()</li>
+              </HashLink>
             </div>
           )}
           </>

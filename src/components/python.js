@@ -1,6 +1,7 @@
 import React from "react";
 import Strings from "./python/strings";
 import Numbers from "./python/numbers";
+import Lists from "./python/lists";
 
 const PythonSheet = () => {
   return (
@@ -30,6 +31,7 @@ const PythonSheet = () => {
       </div>
       <Strings />
       <Numbers />
+      <Lists />
     </div>
   );
 };
