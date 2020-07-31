@@ -8,6 +8,7 @@ const PythonNav = (props) => {
   const [stringsExpanded, setStringsExpanded] = useState(false);
   const [numbersExpanded, setNumbersExpanded] = useState(false);
   const [listsExpanded, setListsExpanded] = useState(false);
+  const [booleansExpanded, setBooleansExpanded] = useState(false);
 
   return (
     <div className="nav-item">
@@ -192,6 +193,41 @@ const PythonNav = (props) => {
               </HashLink>
             </div>
           )}
+          <div className="link-list link-sub-list">
+            <img
+              alt=""
+              onClick={() => setBooleansExpanded(!booleansExpanded)}
+              src={!booleansExpanded ? fileArrowRight : fileArrowDown}
+            />
+            <HashLink
+              smooth
+              to="/python#booleans"
+              scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+              <li>Booleans</li>
+            </HashLink>
+          </div>
+          {booleansExpanded && (
+            <div className="link-sub-list ml-24">
+              <HashLink
+                smooth
+                to="/python#boolean-comparator"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">Expressions</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#boolean-operators"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">Operators</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#bool"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 gold-color">bool()</li>
+              </HashLink>
+            </div>
+            )}
           </>
         )}
       </ul>

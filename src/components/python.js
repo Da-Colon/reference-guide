@@ -2,6 +2,7 @@ import React from "react";
 import Strings from "./python/strings";
 import Numbers from "./python/numbers";
 import Lists from "./python/lists";
+import Booleans from "./python/booleans";
 
 const PythonSheet = () => {
   return (
@@ -32,6 +33,7 @@ const PythonSheet = () => {
       <Strings />
       <Numbers />
       <Lists />
+      <Booleans />
     </div>
   );
 };
