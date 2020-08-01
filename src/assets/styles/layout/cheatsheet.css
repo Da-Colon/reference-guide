@@ -1,9 +1,9 @@
 /* Content */
 
 .container-main{
-  width: 100%;
-  margin-left: 20%;
   padding: 1.5rem 2rem;
+  overflow: auto;
+  flex: 1 1 auto;
 }
 
 .heading {
@@ -11,19 +11,19 @@
   padding-bottom: 0.5rem;
   margin-bottom: 0.8rem;
   border-bottom: solid 1px black;
-  width: 80%;
+  width: 90%;
 }
 
 .heading-two {
   border-bottom: double 6px black;
   height: 4rem;
-  width: 80%;
+  width: 90%;
 }
 
 .heading-three {
   border-bottom: solid 4px black;
   padding-bottom: 1rem;
-  width: 80%;
+  width: 90%;
 }
 
 .container-topic {
@@ -31,7 +31,7 @@
 }
 
 .code-block {
-  width: 80%;
+  width: 90%;
 }
 
 .quote {
@@ -42,25 +42,25 @@
   padding: 1rem;
   text-align: center;
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
 }
 
 .quote-link {
   color: rgb(10,10,255);
   font-size: 1rem;
-  text-align: right;
+  margin: 1.2rem;
   width: 20%;
+  align-self: flex-end;
 }
 
 .container-topic {
   margin: 1.5rem 0;
 }
 
-.code-block {
-  width: 80%;
-}
-
 .table {
-  width: 80%;
+  width: 90%;
 }
 
 .table-row {
@@ -124,8 +124,4 @@
 .flex-center {
   display: flex;
   align-items: center;
-}
-
-.self-end {
-  align-self: flex-end;
 }

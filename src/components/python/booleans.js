@@ -9,12 +9,12 @@ const Booleans = () => (
       <h3 id="booleans" className="heading-three mb-4">
         Booleans
       </h3>
-      <div className="quote flex-center mb-8">
+      <div className="quote flex-center mb-4">
         <q cite="https://www.w3schools.com/python/python_booleans.asp">
         In programming you often need to know if an expression is True or False.
         You can evaluate any expression in Python, and get one of two answers, True or False.
         </q>
-        <div className="self-end quote-link mb-8">
+        <div className="self-end quote-link mb-4">
           <a
             href="https://www.w3schools.com/python/python_booleans.asp"
             target="_blank"

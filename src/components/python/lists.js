@@ -8,11 +8,11 @@ const Lists = () => (
     <h3 id="lists" className="mb-4 heading-three">
         Lists
     </h3>
-    <div className="quote flex-center mb-8">
+    <div className="quote flex-center mb-4">
       <q cite="https://www.w3schools.com/python/python_strings.asp">
       A list is a collection which is ordered and changeable. In Python lists are written with square brackets.
       </q>
-      <div className="self-end quote-link mb-8">
+      <div className="self-end quote-link mb-4">
         <a
           href="https://www.w3schools.com/python/python_lists.asp"
           target="_blank"

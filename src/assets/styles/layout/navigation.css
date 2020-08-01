@@ -1,10 +1,9 @@
 .container-nav {
   display: flex;
-  position: fixed;
   flex-direction: column;
   background-color: rgba(0,0,0,0.1);
   border-right: solid 4px grey;
-  min-width: 19%;
+  min-width: 20%;
   padding: 0.5rem;
   min-height: 100vh;
 }
@@ -42,4 +41,10 @@
 
 .blue-color {
   color: rgb(1, 36, 152)
+}
+
+@media only screen and (max-width: 925px) {
+  .container-nav {
+    min-width: 180px;
+  }
 }

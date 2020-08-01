@@ -18,12 +18,12 @@ const Strings = () =>  (
       <h3 id="strings" className="heading-three mb-4">
         Strings
       </h3>
-      <div className="quote flex-center mb-8">
+      <div className="quote flex-center mb-4">
         <q cite="https://www.w3schools.com/python/python_strings.asp">
           String literals in python are surrounded by either single quotation
           marks, or double quotation marks.
         </q>
-        <div className="self-end quote-link mb-8">
+        <div className="self-end quote-link mb-4">
           <a
             href="https://www.w3schools.com/python/python_strings.asp"
             target="_blank"

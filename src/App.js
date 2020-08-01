@@ -7,8 +7,10 @@ import './assets/styles/main.css'
 const App = () => (
     <div className="app">
       <Router>
-        <Navigation />
-        <Main />
+        <div className="app-container">
+          <Navigation />
+          <Main />
+        </div>
       </Router>
     </div>
 )
