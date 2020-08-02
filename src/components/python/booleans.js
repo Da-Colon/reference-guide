@@ -3,28 +3,17 @@ import React from 'react'
 import { Prism as CodeBlock } from "react-syntax-highlighter";
 import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { booleans, booleansComparators, booleansOperators, booleansValues } from '../../constants/pythonCode';
+import Quote from '../smComponents/quote';
+import TableRow from '../smComponents/tableRow';
 
 const Booleans = () => (
     <div className="container-topic">
       <h3 id="booleans" className="heading-three my-4">
         Booleans
       </h3>
-      <div className="quote flex-center mb-4">
-        <q cite="https://www.w3schools.com/python/python_booleans.asp">
-        In programming you often need to know if an expression is True or False.
-        You can evaluate any expression in Python, and get one of two answers, True or False.
-        </q>
-        <div className="self-end quote-link mb-4">
-          <a
-            href="https://www.w3schools.com/python/python_booleans.asp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            W3schools
-          </a>
-        </div>
-      </div>
+      <Quote url="https://www.w3schools.com/python/python_booleans.asp" siteName="W3schools">
+        In programming you often need to know if an expression is True or False. You can evaluate any expression in Python, and get one of two answers, True or False.
+      </Quote>
       <CodeBlock
         language="python"
         showLineNumbers={true}
@@ -50,29 +39,9 @@ const Booleans = () => (
       />
       <table className="table">
         <tbody>
-        <tr id="bool" className="table-row">
-            <td>
-              <a
-                href="https://www.programiz.com/python-programming/methods/built-in/bool"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4>bool()</h4>
-              </a>
-            </td>
-            <td>Evaluate a given value and returns a boolean. Most values in Python returns 'True' if it has some sort of content.</td>
-          </tr>
-          <tr>
-            <td colSpan={2}>
-              <CodeBlock
-                language="python"
-                showLineNumbers={true}
-                wrapLines={true}
-                style={pojoaque}
-                children={booleansValues}
-              />
-            </td>
-          </tr>
+          <TableRow id="bool" url="https://www.programiz.com/python-programming/methods/built-in/bool" name="bool" code={booleansValues}>
+            Evaluate a given value and returns a boolean. Most values in Python returns 'True' if it has some sort of content
+          </TableRow>
         </tbody>
       </table>
       <div className="see-more">

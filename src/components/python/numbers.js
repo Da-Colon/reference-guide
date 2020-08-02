@@ -2,6 +2,7 @@ import React from 'react'
 import { Prism as CodeBlock } from "react-syntax-highlighter";
 import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { intNumber, floatNumber, complexNumber, randomFloat, randomRange, randomInt } from '../../constants/pythonCode';
+import TableRow from '../smComponents/tableRow'
 
 const Numbers = () => (
   <>
@@ -30,10 +31,9 @@ const Numbers = () => (
         style={pojoaque}
         children={floatNumber}
       />
-  
     </div>
     <h4 id="type-complex" className="my-4">Complex</h4>
-    Complex numbers are written with a "j" as the imaginary part:
+      Complex numbers are written with a "j" as the imaginary part:
     <div className="my-4 code-block">
       <CodeBlock
         language="python"
@@ -52,75 +52,15 @@ const Numbers = () => (
       > (View more...)</a></h4>
     <table className="table">
       <tbody>
-        <tr id="random" className="table-row">
-          <td>
-            <a
-              href="https://www.w3schools.com/python/ref_random_random.asp"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h4>random()</h4>
-            </a>
-          </td>
-          <td>Returns a random float number between 0 and 1</td>
-        </tr>
-        <tr>
-          <td colSpan={2}>
-            <CodeBlock
-              language="python"
-              showLineNumbers={true}
-              wrapLines={true}
-              style={pojoaque}
-              children={randomFloat}
-            />
-          </td>
-        </tr>
-        <tr id="randrange" className="table-row">
-          <td>
-            <a
-              href="https://www.w3schools.com/python/ref_random_randrange.asp"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h4>randrange()</h4>
-            </a>
-          </td>
-          <td>Returns a random number between the given range</td>
-        </tr>
-        <tr>
-          <td colSpan={2}>
-            <CodeBlock
-              language="python"
-              showLineNumbers={true}
-              wrapLines={true}
-              style={pojoaque}
-              children={randomRange}
-            />
-          </td>
-        </tr>
-        <tr id="randint" className="table-row">
-          <td>
-            <a
-              href="https://www.w3schools.com/python/ref_random_randint.asp"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h4>randint()</h4>
-            </a>
-          </td>
-          <td>Returns a random number between the given range</td>
-        </tr>
-        <tr>
-          <td colSpan={2}>
-            <CodeBlock
-              language="python"
-              showLineNumbers={true}
-              wrapLines={true}
-              style={pojoaque}
-              children={randomInt}
-            />
-          </td>
-        </tr>
+        <TableRow id="random" url="https://www.w3schools.com/python/ref_random_random.asp" name="random" code={randomFloat}>
+          Returns a random float number between 0 and 1
+        </TableRow>
+        <TableRow id="randrange" url="https://www.w3schools.com/python/ref_random_randrange.asp" name="randrange" code={randomRange}>
+          Returns a random number between the given range
+        </TableRow>
+        <TableRow id="randint" url="https://www.w3schools.com/python/ref_random_randint.asp" name="randint" code={randomInt}>
+          Returns a random number between the given range
+        </TableRow>
       </tbody>
     </table>
     <div className="see-more">

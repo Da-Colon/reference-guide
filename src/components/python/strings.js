@@ -12,234 +12,53 @@ import {
   titleString,
   upperString,
 } from "../../constants/pythonCode";
+import TableRow from '../smComponents/tableRow';
+import Quote from '../smComponents/quote';
 
 const Strings = () =>  (
     <div className="container-topic">
       <h3 id="strings" className="heading-three my-4">
         Strings
       </h3>
-      <div className="quote flex-center mb-4">
-        <q cite="https://www.w3schools.com/python/python_strings.asp">
-          String literals in python are surrounded by either single quotation
-          marks, or double quotation marks.
-        </q>
-        <div className="self-end quote-link mb-4">
-          <a
-            href="https://www.w3schools.com/python/python_strings.asp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            W3schools
-          </a>
-        </div>
-      </div>
+      <Quote url="https://www.w3schools.com/python/python_strings.asp" siteName="W3schools">
+        String literals in python are surrounded by either single quotation marks, or double quotation marks.
+      </Quote>
       <div className="mb-8 code-block">
         <CodeBlock
           language="python"
           showLineNumbers={true}
           wrapLines={true}
           style={pojoaque}
-        >
-          {stringLiteral}
-        </CodeBlock>
+          children={stringLiteral}
+        />
       </div>
       <h3 className="mb-4">Common string methods</h3>
       <table className="table">
         <tbody>
-          <tr id="capitalize" className="table-row">
-            <td>
-              <a
-                href="https://www.w3schools.com/python/ref_string_capitalize.asp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4>capitalize()</h4>
-              </a>
-            </td>
-            <td>Converts the first character to upper case</td>
-          </tr>
-          <tr>
-            <td colSpan={2}>
-              <CodeBlock
-                language="python"
-                showLineNumbers={true}
-                wrapLines={true}
-                style={pojoaque}
-              >
-                {capitalizeString}
-              </CodeBlock>
-            </td>
-          </tr>
-          <tr id="find" className="table-row">
-            <td className="table-cell">
-              <a
-                href="https://www.w3schools.com/python/ref_string_find.asp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4>find()</h4>
-              </a>
-            </td>
-            <td>
-              Searches the string for a specified value and returns the position
-              of where it was found
-            </td>
-          </tr>
-          <tr>
-            <td colSpan={2}>
-              <CodeBlock
-                language="python"
-                showLineNumbers={true}
-                wrapLines={true}
-                style={pojoaque}
-                children={findString}
-                />
-            </td>
-          </tr>
-          <tr id="format" className="table-row">
-            <td className="table-cell">
-              <a
-                href="https://www.w3schools.com/python/ref_string_format.asp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4>format()</h4>
-              </a>
-            </td>
-            <td>Formats specified values in a string</td>
-          </tr>
-          <tr>
-            <td colSpan={2}>
-              <CodeBlock
-                language="python"
-                showLineNumbers={true}
-                wrapLines={true}
-                style={pojoaque}
-                children={formatString}
-                />
-            </td>
-          </tr>
-          <tr id="lower" className="table-row">
-            <td className="table-cell">
-              <a
-                href="https://www.w3schools.com/python/ref_string_lower.asp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4>lower()</h4>
-              </a>
-            </td>
-            <td>Converts a string into lower case</td>
-          </tr>
-          <tr>
-            <td colSpan={2}>
-              <CodeBlock
-                language="python"
-                showLineNumbers={true}
-                wrapLines={true}
-                style={pojoaque}
-                children={lowerString}
-                />
-            </td>
-          </tr>
-          <tr id="replace" className="table-row">
-            <td className="table-cell">
-              <a
-                href="https://www.w3schools.com/python/ref_string_replace.asp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4>replace()</h4>
-              </a>
-            </td>
-            <td>
-              Returns a string where a specified value is replaced with a
-              specified value
-            </td>
-          </tr>
-          <tr>
-            <td colSpan={2}>
-              <CodeBlock
-                language="python"
-                showLineNumbers={true}
-                wrapLines={true}
-                style={pojoaque}
-                children={replaceString}
-                />
-            </td>
-          </tr>
-          <tr id="split" className="table-row">
-            <td className="table-cell">
-              <a
-                href="https://www.w3schools.com/python/ref_string_split.asp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4>split()</h4>
-              </a>
-            </td>
-            <td>
-              Splits the string at the specified separator, and returns a list
-            </td>
-          </tr>
-          <tr>
-            <td colSpan={2}>
-              <CodeBlock
-                language="python"
-                showLineNumbers={true}
-                wrapLines={true}
-                style={pojoaque}
-                children={splitString}
-                />
-            </td>
-          </tr>
-          <tr id="title" className="table-row">
-            <td className="table-cell">
-              <a
-                href="https://www.w3schools.com/python/ref_string_title.asp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4>title()</h4>
-              </a>
-            </td>
-            <td>Converts the first character of each word to upper case</td>
-          </tr>
-          <tr>
-            <td colSpan={2}>
-              <CodeBlock
-                language="python"
-                showLineNumbers={true}
-                wrapLines={true}
-                style={pojoaque}
-                children={titleString}
-                />
-            </td>
-          </tr>
-          <tr id="upper" className="table-row">
-            <td className="table-cell">
-              <a
-                href="https://www.w3schools.com/python/ref_string_upper.asp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4>upper()</h4>
-              </a>
-            </td>
-            <td>Converts a string into upper case</td>
-          </tr>
-          <tr>
-            <td colSpan={2}>
-              <CodeBlock
-                language="python"
-                showLineNumbers={true}
-                wrapLines={true}
-                style={pojoaque}
-                children={upperString}
-              />
-            </td>
-          </tr>
+          <TableRow id="captialize" url="https://www.w3schools.com/python/ref_string_capitalize.asp" name="captialize" code={capitalizeString}>
+            Converts the first character to upper case
+          </TableRow>
+          <TableRow id="find" url="https://www.w3schools.com/python/ref_string_find.asp" name="find" code={findString}>
+            Searches the string for a specified value and returns the position of where it was found
+          </TableRow>
+          <TableRow id="format" url="https://www.w3schools.com/python/ref_string_format.asp" name="format" code={formatString}>
+            Formats specified values in a string
+          </TableRow>
+          <TableRow id="lower" url="https://www.w3schools.com/python/ref_string_lower.asp" name="lower" code={lowerString}>
+            Converts a string into lower case
+          </TableRow>
+          <TableRow id="replace" url="https://www.w3schools.com/python/ref_string_replace.asp" name="replace" code={replaceString}>
+            Returns a string where a specified value is replaced with a specified value
+          </TableRow>
+          <TableRow id="split" url="https://www.w3schools.com/python/ref_string_split.asp" name="split" code={splitString}>
+            Splits the string at the specified separator, and returns a list
+          </TableRow>
+          <TableRow id="title" url="https://www.w3schools.com/python/ref_string_title.asp" name="title" code={titleString}>
+            Converts the first character of each word to upper case
+          </TableRow>
+          <TableRow id="upper" url="https://www.w3schools.com/python/ref_string_upper.asp" name="upper" code={upperString}>
+            Converts a string into upper case
+          </TableRow>
         </tbody>
       </table>
       <div className="see-more">

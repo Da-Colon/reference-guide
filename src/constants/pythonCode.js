@@ -101,7 +101,7 @@ const num = random.randint(100, 200)
 
 export const list = 
 `list_of_strings = ["I", "am", "a", "list", "of", "strings"]
-list_of_numbers = [1,2,2123123,3,4,5]
+list_of_numbers = [1, 2, 2123123, 3, 4, 5]
 list_of_with_a_little_of_everything = ["string", 234, ["another", "list"]]`
 
 export const accessList = 
