@@ -5,7 +5,13 @@
   border-right: solid 4px grey;
   min-width: 20%;
   padding: 0.5rem;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  overflow: auto;
+  -ms-overflow-style: none;
+}
+
+.container-nav::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-item {
@@ -17,10 +23,15 @@
   display: flex;
   padding-left: 0.4rem;
   padding-top: 0.4rem;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .link-list img {
-  margin-right: 0.4rem;
+  margin: 0.4rem;
+  height: 10px;
+  width: 15px;
+  cursor: pointer;
 }
 
 .link-sub-list {
