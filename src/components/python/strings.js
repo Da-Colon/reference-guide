@@ -45,7 +45,7 @@ const Strings = () =>  (
         </CodeBlock>
       </div>
       <h3 className="mb-4">Common string methods</h3>
-      <table cellSpacing={10} className="table">
+      <table className="table">
         <tbody>
           <tr id="capitalize" className="table-row">
             <td>

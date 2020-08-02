@@ -48,7 +48,7 @@ const Booleans = () => (
         style={pojoaque}
         children={booleansOperators}
       />
-      <table cellSpacing={10} className="table">
+      <table className="table">
         <tbody>
         <tr id="bool" className="table-row">
             <td>

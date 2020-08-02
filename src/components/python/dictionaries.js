@@ -99,7 +99,7 @@ const Dictionaries = () => (
         </CodeBlock>
       </div>
       <h3 className="mb-4">Common dictionary methods</h3>
-      <table cellSpacing={10} className="table">
+      <table className="table">
         <tbody>
         <tr id="dictionary-get" className="table-row">
             <td>

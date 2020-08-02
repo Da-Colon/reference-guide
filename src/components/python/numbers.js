@@ -50,7 +50,7 @@ const Numbers = () => (
       target="_blank"
       rel="noopener noreferrer"
       > (View more...)</a></h4>
-    <table cellSpacing={10} className="table">
+    <table className="table">
       <tbody>
         <tr id="random" className="table-row">
           <td>

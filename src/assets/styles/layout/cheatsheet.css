@@ -11,19 +11,19 @@
   padding-bottom: 0.5rem;
   margin-bottom: 0.8rem;
   border-bottom: solid 1px black;
-  width: 90%;
+  width: 100%;
 }
 
 .heading-two {
   border-bottom: double 6px black;
   height: 4rem;
-  width: 90%;
+  width: 100%;
 }
 
 .heading-three {
   border-bottom: solid 4px black;
   padding-bottom: 1rem;
-  width: 90%;
+  width: 100%;
 }
 
 .container-topic {
@@ -31,7 +31,7 @@
 }
 
 .code-block {
-  width: 90%;
+  width: 100%;
 }
 
 .quote {
@@ -71,6 +71,7 @@
 
 .table {
   width: 100%;
+  border-spacing: 0 1rem;
 }
 
 .table-row {

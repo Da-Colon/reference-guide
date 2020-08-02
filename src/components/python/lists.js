@@ -49,7 +49,7 @@ const Lists = () => (
     <h3 id="listMethods" className="mb-4 heading-three">
         Common list methods
     </h3>
-    <table cellSpacing={10} className="table">
+    <table className="table">
       <tbody>
         <tr id="append" className="table-row">
           <td>
