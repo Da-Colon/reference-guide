@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../assets/styles/layout/navigation.css'
 import PythonNav from '../components/navigation/pythonNav'
-import HtmlNav from '../components/navigation/htmlNav'
+// import HtmlNav from '../components/navigation/htmlNav'
 
 class Navigation extends Component {
   constructor(props){

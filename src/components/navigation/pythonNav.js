@@ -21,6 +21,7 @@ const PythonNav = () => {
   const updateNav = () => {
     setShowNav(location.pathname === "/python" ? true : false)
   }
+
   return (
     <div className="nav-item">
       <HashLink to="/python" onClick={() => window.scrollTo(0, 0)}>
@@ -319,6 +320,54 @@ const PythonNav = () => {
               )}
             </>
           )}
+          {/* <div className="link-list">
+            <img
+              alt=""
+              // onClick={() => setDataTypeExpanded(!dataTypeExpanded)}
+              src={!dataTypeExpanded ? fileArrowRight : fileArrowDown}
+            />
+            <HashLink
+              smooth
+              to="/python#functions"
+              scroll={(el) =>
+                el.scrollIntoView({ behavior: "smooth", block: "start" })
+              }
+            >
+              <li>Functions</li>
+            </HashLink>
+          </div>
+          <div className="link-list">
+            <img
+              alt=""
+              // onClick={() => setDataTypeExpanded(!dataTypeExpanded)}
+              src={!dataTypeExpanded ? fileArrowRight : fileArrowDown}
+            />
+            <HashLink
+              smooth
+              to="/python#loops"
+              scroll={(el) =>
+                el.scrollIntoView({ behavior: "smooth", block: "start" })
+              }
+            >
+              <li>Loops</li>
+            </HashLink>
+          </div>
+          <div className="link-list">
+            <img
+              alt=""
+              // onClick={() => setDataTypeExpanded(!dataTypeExpanded)}
+              src={!dataTypeExpanded ? fileArrowRight : fileArrowDown}
+            />
+            <HashLink
+              smooth
+              to="/python#methods"
+              scroll={(el) =>
+                el.scrollIntoView({ behavior: "smooth", block: "start" })
+              }
+            >
+              <li>Methods</li>
+            </HashLink>
+          </div> */}
         </ul>
       )}
     </div>
