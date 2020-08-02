@@ -16,7 +16,7 @@ class Navigation extends Component {
       
       <div className="container-nav">
         <PythonNav />
-        <HtmlNav />
+        {/* <HtmlNav /> */}
       </div>
       
       
