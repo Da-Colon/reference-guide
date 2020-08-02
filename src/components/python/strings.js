@@ -15,7 +15,7 @@ import {
 
 const Strings = () =>  (
     <div className="container-topic">
-      <h3 id="strings" className="heading-three mb-4">
+      <h3 id="strings" className="heading-three my-4">
         Strings
       </h3>
       <div className="quote flex-center mb-4">

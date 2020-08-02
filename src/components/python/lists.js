@@ -5,7 +5,7 @@ import { list, accessList, listAppend, listPop, listInsert } from '../../constan
 
 const Lists = () => (
   <>
-    <h3 id="lists" className="mb-4 heading-three">
+    <h3 id="lists" className="my-4 heading-three">
         Lists
     </h3>
     <div className="quote flex-center mb-4">

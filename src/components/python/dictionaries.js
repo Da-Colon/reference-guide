@@ -5,7 +5,7 @@ import { dictionaries, dictionaryAccess, dictionaryNestedAccess, dictionaryChang
 
 const Dictionaries = () => (
 <div className="container-topic">
-      <h3 id="dictionaries" className="heading-three mb-4">
+      <h3 id="dictionaries" className="heading-three my-4">
         Dictionaries
       </h3>
       <div className="quote flex-center mb-4">

@@ -5,7 +5,7 @@ import { intNumber, floatNumber, complexNumber, randomFloat, randomRange, random
 
 const Numbers = () => (
   <>
-    <h3 id="numbers" className="mb-4 heading-three">
+    <h3 id="numbers" className="my-4 heading-three">
         Numbers
     </h3>
     There are three types of numeric types in python:

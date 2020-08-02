@@ -6,7 +6,7 @@ import { booleans, booleansComparators, booleansOperators, booleansValues } from
 
 const Booleans = () => (
     <div className="container-topic">
-      <h3 id="booleans" className="heading-three mb-4">
+      <h3 id="booleans" className="heading-three my-4">
         Booleans
       </h3>
       <div className="quote flex-center mb-4">
