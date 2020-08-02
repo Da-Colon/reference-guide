@@ -9,6 +9,7 @@ const PythonNav = (props) => {
   const [numbersExpanded, setNumbersExpanded] = useState(false);
   const [listsExpanded, setListsExpanded] = useState(false);
   const [booleansExpanded, setBooleansExpanded] = useState(false);
+  const [dictionariesExpanded, setDictionariesExpanded] = useState(false);
 
   return (
     <div className="nav-item">
@@ -227,6 +228,83 @@ const PythonNav = (props) => {
                 <li className="pt-8 gold-color">bool()</li>
               </HashLink>
             </div>
+            )}
+            <div className="link-list link-sub-list">
+              <img
+                alt=""
+                onClick={() => setDictionariesExpanded(!dictionariesExpanded)}
+                src={!dictionariesExpanded ? fileArrowRight : fileArrowDown}
+              />
+              <HashLink
+                smooth
+                to="/python#dictionaries"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li>Dictionaries</li>
+              </HashLink>
+            </div>
+            {dictionariesExpanded && (
+              <div className="link-sub-list ml-24">
+                <HashLink
+                  smooth
+                  to="/python#dictionary-access"
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                  <li className="pt-8 blue-color">Accessing a dictionary</li>
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/python#nested-access"
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                  <li className="pt-8 blue-color">Accessing a nested dictionary</li>
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/python#change-value"
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                  <li className="pt-8 blue-color">Changing a value</li>
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/python#value-exists"
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                  <li className="pt-8 blue-color">Check if value exists</li>
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/python#add-value"
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                  <li className="pt-8 blue-color">Add a value</li>
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/python#dictionary-get"
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                  <li className="pt-8 gold-color">get()</li>
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/python#dictionary-items"
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                  <li className="pt-8 gold-color">items()</li>
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/python#dictionary-keys"
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                  <li className="pt-8 gold-color">keys()</li>
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/python#dictionary-update"
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                  <li className="pt-8 gold-color">update()</li>
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/python#dictionary-values"
+                  scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                  <li className="pt-8 gold-color">values()</li>
+                </HashLink>
+              </div>
             )}
           </>
         )}

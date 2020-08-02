@@ -42,6 +42,7 @@
   padding: 1rem;
   text-align: center;
   width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -55,12 +56,21 @@
   align-self: flex-end;
 }
 
+.link {
+  color: rgb(10,10,255);
+  font-size: 1rem;
+}
+
+.link:hover {
+  font-weight: 700;
+}
+
 .container-topic {
   margin: 1.5rem 0;
 }
 
 .table {
-  width: 90%;
+  width: 100%;
 }
 
 .table-row {

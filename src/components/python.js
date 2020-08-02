@@ -3,6 +3,7 @@ import Strings from "./python/strings";
 import Numbers from "./python/numbers";
 import Lists from "./python/lists";
 import Booleans from "./python/booleans";
+import Dictionaries from "./python/dictionaries"
 
 const PythonSheet = () => {
   return (
@@ -34,6 +35,7 @@ const PythonSheet = () => {
       <Numbers />
       <Lists />
       <Booleans />
+      <Dictionaries />
     </div>
   );
 };
