@@ -10,7 +10,7 @@ const Functions = () => (
       A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.
     </Quote>
     <h3 id="functions" className="heading-three my-4">
-      Anatomry of a function
+      Anatomy of a function
     </h3>
     <h4 id="functions-define" className="my-4">Defining a function</h4>
       "def" keyword defines a function, followed by the name of function and () with or without parameters
