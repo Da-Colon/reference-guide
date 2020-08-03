@@ -13,6 +13,7 @@ const PythonNav = () => {
   const [listsExpanded, setListsExpanded] = useState(false);
   const [booleansExpanded, setBooleansExpanded] = useState(false);
   const [dictionariesExpanded, setDictionariesExpanded] = useState(false);
+  const [functionsExpanded, setFunctionsExpanded] = useState(false);
 
   useEffect(() => {
     updateNav();
@@ -37,6 +38,7 @@ const PythonNav = () => {
             />
             <HashLink
               smooth
+              onClick={() => setDataTypeExpanded(!dataTypeExpanded)}
               to="/python#data-types"
               scroll={(el) =>
                 el.scrollIntoView({ behavior: "smooth", block: "start" })
@@ -55,6 +57,7 @@ const PythonNav = () => {
                 />
                 <HashLink
                   smooth
+                  onClick={() => setStringsExpanded(!stringsExpanded)}
                   to="/python#strings"
                   scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
                   <li>Strings</li>
@@ -120,6 +123,7 @@ const PythonNav = () => {
               />
               <HashLink
                 smooth
+                onClick={() => setNumbersExpanded(!numbersExpanded)}
                 to="/python#numbers"
                 scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
                 <li>Numbers</li>
@@ -173,6 +177,7 @@ const PythonNav = () => {
               />
               <HashLink
                 smooth
+                onClick={() => setListsExpanded(!listsExpanded)}
                 to="/python#lists"
                 scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
                 <li>Lists</li>
@@ -214,6 +219,7 @@ const PythonNav = () => {
               />
               <HashLink
                 smooth
+                onClick={() => setBooleansExpanded(!booleansExpanded)}
                 to="/python#booleans"
                 scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
                 <li>Booleans</li>
@@ -249,6 +255,7 @@ const PythonNav = () => {
                 />
                 <HashLink
                   smooth
+                  onClick={() => setDictionariesExpanded(!dictionariesExpanded)}
                   to="/python#dictionaries"
                   scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
                   <li>Dictionaries</li>
@@ -320,14 +327,15 @@ const PythonNav = () => {
               )}
             </>
           )}
-          {/* <div className="link-list">
+          <div className="link-list">
             <img
               alt=""
-              // onClick={() => setDataTypeExpanded(!dataTypeExpanded)}
-              src={!dataTypeExpanded ? fileArrowRight : fileArrowDown}
+              onClick={() => setFunctionsExpanded(!functionsExpanded)}
+              src={!functionsExpanded ? fileArrowRight : fileArrowDown}
             />
             <HashLink
               smooth
+              onClick={() => setFunctionsExpanded(!functionsExpanded)}
               to="/python#functions"
               scroll={(el) =>
                 el.scrollIntoView({ behavior: "smooth", block: "start" })
@@ -336,7 +344,47 @@ const PythonNav = () => {
               <li>Functions</li>
             </HashLink>
           </div>
-          <div className="link-list">
+          {functionsExpanded && (
+            <div className="link-sub-list ml-14">
+              <HashLink
+                smooth
+                to="/python#functions-define"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">Defining a function</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#functions-call"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">A function call</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#functions-argument"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">Functions with Arguments</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#functions-argument-error"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">Number of arguments</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#functions-argument-arbitrary"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">Arbitrary arguments</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#functions-return"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">Returning values</li>
+              </HashLink>
+            </div>
+          )}
+          {/* <div className="link-list">
             <img
               alt=""
               // onClick={() => setDataTypeExpanded(!dataTypeExpanded)}
@@ -351,8 +399,8 @@ const PythonNav = () => {
             >
               <li>Loops</li>
             </HashLink>
-          </div>
-          <div className="link-list">
+          </div> */}
+          {/* <div className="link-list">
             <img
               alt=""
               // onClick={() => setDataTypeExpanded(!dataTypeExpanded)}

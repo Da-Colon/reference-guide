@@ -4,6 +4,7 @@ import Numbers from "./python/numbers";
 import Lists from "./python/lists";
 import Booleans from "./python/booleans";
 import Dictionaries from "./python/dictionaries"
+import Functions from "./python/function";
 
 const PythonSheet = () => {
   return (
@@ -36,6 +37,10 @@ const PythonSheet = () => {
       <Lists />
       <Booleans />
       <Dictionaries />
+      <div id="functions" className="heading-two flex-center mb-8">
+        <h2>Functions</h2>
+      </div>
+      <Functions />
     </div>
   );
 };
