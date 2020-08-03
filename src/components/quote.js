@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Quote = ({url, children, siteName}) => (
   <div className="quote flex-center mb-4">
@@ -17,5 +18,11 @@ const Quote = ({url, children, siteName}) => (
         </div>
       </div>
 )
+
+Quote.propTypes = {
+  url: PropTypes.string.isRequired,
+  siteName: PropTypes.string.isRequired,
+  children: PropTypes.element.isRequired
+}
 
 export default Quote
