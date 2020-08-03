@@ -3,8 +3,8 @@ import React from 'react'
 import { Prism as CodeBlock } from "react-syntax-highlighter";
 import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { booleans, booleansComparators, booleansOperators, booleansValues } from '../../constants/pythonCode';
-import Quote from '../smComponents/quote';
-import TableRow from '../smComponents/tableRow';
+import Quote from '../quote';
+import TableRow from '../tableRow';
 
 const Booleans = () => (
     <div className="container-topic">

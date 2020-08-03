@@ -2,8 +2,8 @@ import React from 'react'
 import { Prism as CodeBlock } from "react-syntax-highlighter";
 import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { list, accessList, listAppend, listPop, listInsert } from '../../constants/pythonCode'
-import TableRow from '../smComponents/tableRow';
-import Quote from '../smComponents/quote';
+import TableRow from '../tableRow';
+import Quote from '../quote';
 
 const Lists = () => (
   <>

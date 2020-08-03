@@ -12,8 +12,8 @@ import {
   titleString,
   upperString,
 } from "../../constants/pythonCode";
-import TableRow from '../smComponents/tableRow';
-import Quote from '../smComponents/quote';
+import TableRow from '../tableRow';
+import Quote from '../quote';
 
 const Strings = () =>  (
     <div className="container-topic">

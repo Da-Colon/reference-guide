@@ -2,8 +2,8 @@ import React from 'react'
 import { Prism as CodeBlock } from "react-syntax-highlighter";
 import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { dictionaries, dictionaryAccess, dictionaryNestedAccess, dictionaryChangeValue, dictionaryCheckKey, dictionaryAddValue, dictionaryGet, dictionaryItems, dictionaryKeys, dictionaryUpdate, dictionaryValues } from '../../constants/pythonCode';
-import TableRow from '../smComponents/tableRow';
-import Quote from '../smComponents/quote';
+import TableRow from '../tableRow';
+import Quote from '../quote';
 
 const Dictionaries = () => (
 <div className="container-topic">
