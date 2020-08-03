@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Prism as CodeBlock } from "react-syntax-highlighter";
 import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { booleans, booleansComparators, booleansOperators, booleansValues } from '../../constants/pythonCode';
+import { booleans, booleansComparators, booleansOperators, booleansValues } from '../../constants/code/python/booleans';
 import Quote from '../quote';
 import TableRow from '../tableRow';
 

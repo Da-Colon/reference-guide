@@ -1,7 +1,7 @@
 import React from 'react'
 import { Prism as CodeBlock } from "react-syntax-highlighter";
 import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { list, accessList, listAppend, listPop, listInsert } from '../../constants/pythonCode'
+import { list, accessList, listAppend, listPop, listInsert } from '../../constants/code/python/lists'
 import TableRow from '../tableRow';
 import Quote from '../quote';
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Prism as CodeBlock } from "react-syntax-highlighter";
 import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { intNumber, floatNumber, complexNumber, randomFloat, randomRange, randomInt } from '../../constants/pythonCode';
+import { intNumber, floatNumber, complexNumber, randomFloat, randomRange, randomInt } from '../../constants/code/python/number';
 import TableRow from '../tableRow'
 
 const Numbers = () => (

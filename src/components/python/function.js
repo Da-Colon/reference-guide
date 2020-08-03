@@ -2,7 +2,7 @@ import React from 'react'
 import Quote from '../quote'
 import { Prism as CodeBlock } from "react-syntax-highlighter";
 import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { functions, functionsCall, functionsArgument, functionsArgumentError, functionsArgumentsArbitrary, functionsReturn } from '../../constants/pythonCode';
+import { functions, functionsCall, functionsArgument, functionsArgumentError, functionsArgumentsArbitrary, functionsReturn } from '../../constants/code/python/functions';
 
 const Functions = () => (
   <div>

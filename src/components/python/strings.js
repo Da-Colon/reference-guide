@@ -11,7 +11,7 @@ import {
   splitString,
   titleString,
   upperString,
-} from "../../constants/pythonCode";
+} from "../../constants/code/python/strings";
 import TableRow from '../tableRow';
 import Quote from '../quote';
 

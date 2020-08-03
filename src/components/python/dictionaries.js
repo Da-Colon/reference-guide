@@ -1,7 +1,7 @@
 import React from 'react'
 import { Prism as CodeBlock } from "react-syntax-highlighter";
 import { pojoaque } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { dictionaries, dictionaryAccess, dictionaryNestedAccess, dictionaryChangeValue, dictionaryCheckKey, dictionaryAddValue, dictionaryGet, dictionaryItems, dictionaryKeys, dictionaryUpdate, dictionaryValues } from '../../constants/pythonCode';
+import { dictionaries, dictionaryAccess, dictionaryNestedAccess, dictionaryChangeValue, dictionaryCheckKey, dictionaryAddValue, dictionaryGet, dictionaryItems, dictionaryKeys, dictionaryUpdate, dictionaryValues } from '../../constants/code/python/dictionaries';
 import TableRow from '../tableRow';
 import Quote from '../quote';
 
