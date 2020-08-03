@@ -45,7 +45,7 @@ const Lists = () => (
         <TableRow id="pop" url="https://www.w3schools.com/python/ref_list_pop.asp" name="pop" code={listPop}>
           Removes the element at the specified position
         </TableRow>
-        <TableRow id="insert" url="https://www.w3schools.com/python/ref_list_insert.asp" code={listInsert}>
+        <TableRow id="insert" url="https://www.w3schools.com/python/ref_list_insert.asp" name="insert" code={listInsert}>
           Adds an element at the specified position
         </TableRow>
       </tbody>
