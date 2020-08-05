@@ -14,6 +14,7 @@ const PythonNav = () => {
   const [booleansExpanded, setBooleansExpanded] = useState(false);
   const [dictionariesExpanded, setDictionariesExpanded] = useState(false);
   const [functionsExpanded, setFunctionsExpanded] = useState(false);
+  const [loopsExpanded, setLoopsExpanded] = useState(false);
 
   useEffect(() => {
     updateNav();
@@ -384,11 +385,11 @@ const PythonNav = () => {
               </HashLink>
             </div>
           )}
-          {/* <div className="link-list">
+          <div className="link-list">
             <img
               alt=""
-              // onClick={() => setDataTypeExpanded(!dataTypeExpanded)}
-              src={!dataTypeExpanded ? fileArrowRight : fileArrowDown}
+              onClick={() => setLoopsExpanded(!loopsExpanded)}
+              src={!loopsExpanded ? fileArrowRight : fileArrowDown}
             />
             <HashLink
               smooth
@@ -399,23 +400,53 @@ const PythonNav = () => {
             >
               <li>Loops</li>
             </HashLink>
-          </div> */}
-          {/* <div className="link-list">
-            <img
-              alt=""
-              // onClick={() => setDataTypeExpanded(!dataTypeExpanded)}
-              src={!dataTypeExpanded ? fileArrowRight : fileArrowDown}
-            />
-            <HashLink
-              smooth
-              to="/python#methods"
-              scroll={(el) =>
-                el.scrollIntoView({ behavior: "smooth", block: "start" })
-              }
-            >
-              <li>Methods</li>
-            </HashLink>
-          </div> */}
+          </div>
+          {loopsExpanded && (
+            <div className="link-sub-list ml-14">
+              <HashLink
+                smooth
+                to="/python#for-loops"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">For loops</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#range"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 gold-color">range()</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#for-loops-lists"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">Looping through lists</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#for-loops-nested"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">Looping through nested lists</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#while-loops"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">While loops</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#break-statement"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">Break statement</li>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/python#continue-statement"
+                scroll={(el) => el.scrollIntoView({ behavior: "smooth", block: "start" })}>
+                <li className="pt-8 blue-color">Continue statement</li>
+              </HashLink>
+            </div>
+          )}
         </ul>
       )}
     </div>

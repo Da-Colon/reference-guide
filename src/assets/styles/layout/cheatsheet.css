@@ -102,6 +102,11 @@
   box-shadow: 2px 8px rgba(37, 36, 36, 0.7);
 }
 
+.warning {
+  color: rgb(184, 4, 4);
+  font-weight: 600;
+}
+
 /* Reuseable */
 
 .content-between {

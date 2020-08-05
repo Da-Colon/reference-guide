@@ -5,6 +5,7 @@ import Lists from "./python/lists";
 import Booleans from "./python/booleans";
 import Dictionaries from "./python/dictionaries"
 import Functions from "./python/function";
+import Loops from "./python/loops";
 
 const PythonSheet = () => {
   return (
@@ -41,6 +42,10 @@ const PythonSheet = () => {
         <h2>Functions</h2>
       </div>
       <Functions />
+      <div id="loops" className="heading-two flex-center mb-8">
+        <h2>Loops</h2>
+      </div>
+      <Loops />
     </div>
   );
 };
